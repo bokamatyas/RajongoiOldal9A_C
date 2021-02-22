@@ -1,1 +1,1 @@
-izé
+Ideiglenes szöveg
