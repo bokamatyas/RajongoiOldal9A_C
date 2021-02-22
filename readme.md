@@ -1,1 +1,1 @@
-Ideiglenes szöveg
+Ideiglenes szöveg.
