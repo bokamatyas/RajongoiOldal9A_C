@@ -2,11 +2,6 @@
 <html lang="hu">
 
 <head>
-    <style>
-        body {
-            background-image:
-        }
-    </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -49,20 +44,110 @@
         <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">A NASA küldetései</h1>
         <p>A NASA jelentős és legemlékezetesebb küldetésiről találhatóak itt információk. </p>
     </div>
-    <div class="card-deck">
-        <div class="card bg-dark text-white">
-            <div class="card-body text-center">
-                <p class="card-text">Some text inside the first card</p>
+    <div class="container" style="width: 850px;">
+        <div class="card-deck">
+            <div class="card bg-dark">
+                <img class="card-img-top" src="250px-Mercury_3.jpg" alt="Card image" style="width: 250px; height: 300px;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Mercury program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Mercury">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="Gemini_6_Views_Gemini_7.jpg" alt="Card image" style="width: 250px; height: 300px">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Gemini program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Gemini">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="Apollo_11_bootprint.jpg" alt="Card image" style="width: 250px; height: 300px;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Apollo program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Apollo">
+                        Részletek
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="card bg-dark">
-            <div class="card-body text-center">
-                <p class="card-text">Some text inside the second card</p>
+    </div>
+    <div class="container pt-4" style="width: 580px;">
+        <div class="card-deck">
+            
+            <div class="card bg-dark">
+                <img class="card-img-top" src="" alt="Card image" style="width: 250px; height: 300px">
+                <div class="card-body text-white">
+                    <h4 class="card-title"></h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal" id="Mercury">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Mercury program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Mercury-program az Amerikai Egyesült Államok első, emberek részvételével végrehajtott űrprogramja volt. A programot 1959 és 1963 között hajtotta végre a NASA, melynek keretében húsz automata üzemmódban, emberek nélküli, vagy állatokkal végzett tesztrepülésre és hat, űrhajósokat a világűrbe juttató repülésre került sor.<hr>(1961-ben Alan Shepard űrugrást hajt végre a Freedom 7 nevű kapszulával. Ő volt az első amerikai a világűrben. 1962-ben John Glenn volt az első amerikai űrhajós Föld körüli pályán) <hr> 
+                    A program fő célja az volt, hogy az USA a világon először embert juttasson a világűrbe és ezzel az űrversenyben megelőzze a Szovjetuniót. A célok később átalakultak, amikor a szovjetek elhódították az elsőséget a Vosztok-programmal, és John F. Kennedy elnök bejelentette az Apollo-programot, ettől kezdve a Mercury-program a minél szélesebb körű űrbéli tapasztalatszerzést szolgálta.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
             </div>
         </div>
-        <div class="card bg-dark">
-            <div class="card-body text-center">
-                <p class="card-text">Some text inside the second card</p>
+    </div>
+
+    <div class="modal" id="Gemini">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Gemini program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Gemini-program keretében 16 űrhajós 600-szor kerülte meg a Földet. A Mercury-program folytatása, és az Apollo-program előkészítése volt.<hr> A Gemini-program az Egyesült Államok harmadikként bejelentett, ám repüléseit tekintve másodikként végrehajtott, űrhajósokat az űrbe juttató űrrepülési programja volt. Céljait tekintve az Apollo-programnak alárendelt program volt. A NASA az 1960-as években ennek keretében próbálta ki a bonyolultabb űrműveleteket, amelyek a későbbi holdra szállásokon előfordultak. Ebben a sorozatban készítették fel az űrhajósokat az Apollo-program repüléseire, hogy a hatalmas kihívást jelentő holdutazásokra tapasztalatokkal rendelkező személyzetek indulhassanak. A holdra szálló űrhajósok többsége részt vett a Gemini-programban is.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="Apollo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Apollo program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    Az Apollo-program keretében 1969 és 1972 között 12 űrhajós járt a Holdon. Az emberes űrrepülések terén a Mercury- és Gemini-programok már az előkészületet jelentették az űrkutatás történetének legnagyobb vállalkozásához, a Hold meghódításához.<hr>1969. július 20-án az Apollo–11 űrhajóval történt az első holdra szállás, Neil Armstrong és Edwin Aldrin űrhajósokkal. Összesen 15 Apollo űrhajó hagyta el a Föld felszínét. Értékes holdmintákat hoztak vissza, amelynek laboratóriumi megvizsgálása még tart, s információkat adhat a Hold geológiájának és a Naprendszer keletkezésének megértésére.
+
+
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
             </div>
         </div>
     </div>
