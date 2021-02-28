@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <link rel="stylesheet" href="menü.css">
+    <link rel="icon" type="image/png" href="pngfind.com-nasa-logo-png-2995596.png">
+    <style>
+        body {
+            background-image: url("astronaut.png");
+            background-repeat: round;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="navbar-brand">
+                <p class="navbar-brand"><img src="pngfind.com-nasa-logo-png-2995596.png" alt="A" style="width: 50px;"></p>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html" style="font-size: 30px;"> Menü</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="main.html" style="font-size: 30px;">Főoldal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galery.html" style="font-size: 30px;">Galéria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="font-size: 30px;">Kapcsolat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" style="font-size: 30px;">Névjegy</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="jumbotron text-center pt-5" style="opacity: 0.7;">
+        <img src="pngfind.com-nasa-logo-png-2995596.png" alt="Nasa_logo " height="110" width="150">
+        <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">A NASA mérföldkövei</h1>
+        <p>A NASA jelentős és legemlékezetesebb küldetésiről, valamint meghatározó pillanatairól találhatóak itt információk. </p>
+    </div>
+    <div class="container-fluid col">
+        <div class="card-deck mx-auto" style="max-width: 900px;">
+            <div class="card bg-dark">
+                <img class="card-img-top" src="250px-Mercury_3.jpg" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Mercury program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Mercury">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="Gemini_6_Views_Gemini_7.jpg" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Gemini program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Gemini">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="Apollo_11_bootprint.jpg" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Apollo program</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Apollo">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid col pt-4">
+        <div class="card-deck mx-auto" style="max-width: 900px;">
+            <div class="card bg-dark">
+                <img class="card-img-top" src="kXGSzBZLFvFt2kBZFazJU3-1200-80.jpg" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Űrrepülők</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SS">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="OIP.jfif" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Challenger űrsikló</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Challenger">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <img class="card-img-top" src="300px-Space_Shuttle_Columbia_launching.jpg" alt="Card image" style="width:100%;">
+                <div class="card-body text-white">
+                    <h4 class="card-title">Columbia űrsikló</h4>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Columbia">
+                        Részletek
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="Mercury">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Mercury program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Mercury-program az Amerikai Egyesült Államok első, emberek részvételével végrehajtott űrprogramja volt. A programot 1959 és 1963 között hajtotta végre a NASA, melynek keretében húsz automata üzemmódban, emberek nélküli, vagy állatokkal végzett tesztrepülésre és hat, űrhajósokat a világűrbe juttató repülésre került sor.
+                    <hr>(1961-ben Alan Shepard űrugrást hajt végre a Freedom 7 nevű kapszulával. Ő volt az első amerikai a világűrben. 1962-ben John Glenn volt az első amerikai űrhajós Föld körüli pályán)
+                    <hr>
+                    A program fő célja az volt, hogy az USA a világon először embert juttasson a világűrbe és ezzel az űrversenyben megelőzze a Szovjetuniót. A célok később átalakultak, amikor a szovjetek elhódították az elsőséget a Vosztok-programmal, és John F. Kennedy elnök bejelentette az Apollo-programot, ettől kezdve a Mercury-program a minél szélesebb körű űrbéli tapasztalatszerzést szolgálta.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Gemini">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Gemini program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Gemini-program keretében 16 űrhajós 600-szor kerülte meg a Földet. A Mercury-program folytatása, és az Apollo-program előkészítése volt.
+                    <hr> A Gemini-program az Egyesült Államok harmadikként bejelentett, ám repüléseit tekintve másodikként végrehajtott, űrhajósokat az űrbe juttató űrrepülési programja volt. Céljait tekintve az Apollo-programnak alárendelt program volt. A NASA az 1960-as években ennek keretében próbálta ki a bonyolultabb űrműveleteket, amelyek a későbbi holdra szállásokon előfordultak. Ebben a sorozatban készítették fel az űrhajósokat az Apollo-program repüléseire, hogy a hatalmas kihívást jelentő holdutazásokra tapasztalatokkal rendelkező személyzetek indulhassanak. A holdra szálló űrhajósok többsége részt vett a Gemini-programban is.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="Apollo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Apollo program</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    Az Apollo-program keretében 1969 és 1972 között 12 űrhajós járt a Holdon. Az emberes űrrepülések terén a Mercury- és Gemini-programok már az előkészületet jelentették az űrkutatás történetének legnagyobb vállalkozásához, a Hold meghódításához.
+                    <hr>1969. július 20-án az Apollo–11 űrhajóval történt az első holdra szállás, Neil Armstrong és Edwin Aldrin űrhajósokkal. Összesen 15 Apollo űrhajó hagyta el a Föld felszínét. Értékes holdmintákat hoztak vissza, amelynek laboratóriumi megvizsgálása még tart, s információkat adhat a Hold geológiájának és a Naprendszer keletkezésének megértésére.
+
+
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="SS">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Űrrepülők</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    Az amerikai űrrepülőgépek voltak az első teljesen újrafelhasználható hordozóeszközök. Összesen hat ilyen űrrepülőgépet építettek meg, melyek közül öt repült a világűrben. 1981 óta száznál is több repülést hajtottak végre. Húsz évnyi működés során két űrrepülőgép semmisült meg: a Challenger 1986-ban és a Columbia 2003-ban. Ennek ellenére a NASA űrrepülőgép-programja sikeresnek mondható.
+                    <hr> Az űrrepülő – magyarul gyakran „űrsikló” – (hivatalos angol nevén: Space Transportation System, STS, a. m. Űrszállítási rendszer) az Amerikai Egyesült Államok ember szállítására is alkalmas űrprogramja volt. Ez volt a világon az első olyan konstrukció, amelynek bizonyos részeit újra fel lehetett használni. A szárnyas űrrepülő (Orbiter) függőleges állásban, rakétaként hagyta el a Földet, majd siklórepülő módjára szállt le.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="Challenger">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Challenger űrsikló</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Challenger a második amerikai űrrepülőgép volt a Columbia után. Az űrrepülőgépet a Rockwell International gyárban építették a kaliforniai Downeyben. Első repülésére 1983 április 4-én került sor, összesen kilenc küldetést teljesített. 1986. január 28-án, a küldetésén küldetésen fedélzetén hét űrhajóssal, az indítás után 73 másodperccel megsemmisült. A balesetet követően két és fél évig szüneteltették az űrsiklóflotta használatát, az újraindulás 1988-ban folytatódott, amit a Discovery hajtott végre. A Challengert az Endeavour helyettesítette, amit először 1992-ben indítottak útjára. Az Endeavourt tartalék alkatrészekből építették meg.
+                    <hr> A Challenger űrrepülése alatt repült az első amerikai nő, az első afro-amerikai nő és az első kanadai űrhajós. Három Spacelab-küldetést végzett el, az első éjszakai indítást valamint az első éjszakai landolást. A Challenger volt az első űrsikló, amely küldetés közben egy baleset során megsemmisült. Az összegyűjtött roncsokat a Cape Canaveral-i légierő-állomáson tárolják, később további törmelékdarabokat a floridai tengerparton is találtak.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="Columbia">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+                    <h4 class="modal-title">Columbia űrsikló</h4>
+                </div>
+
+                <div class="modal-body bg-info">
+                    A Columbia az első amerikai űrrepülőgép, és az első újra felhasználható űreszköz, amelyet a világűrben kipróbáltak.
+                    <hr>
+
+                    Első repülésére 1981. április 12-én (éppen Gagarin űrrepülésének huszadik évfordulóján) került sor, két űrhajóssal a fedélzetén. Nevét a Boston alapú Columbia Rediviva (közismert nevén: a Columbia) naszádról kapta, amelynek kapitánya Robert Gray volt, aki az 1790-es években fedezte fel a Csendes-óceáni Északnyugat régió között elterülő államokat, az első amerikai hajó amely körülhajózta a világot. Ezzel az űrrepülőgéppel indították 1999 nyarán a Chandra röntgentávcsövet. A Columbia vitte fel először a Spacelab laboratórium modult 1983 novemberében, 1996 novembere és decembere között hajtotta végre a Space Shuttle történetének leghosszabb repülését, amely 17 napig és 15 óráig tartott. Valamint a Hubble űrtávcső negyedik javítását végezte el 2002 márciusában.
+                    <hr>
+
+                    2003. február 1-jén a Földre való visszatérés közben, hét űrhajóssal a fedélzetén megsemmisült.
+                    <hr>
+
+                    A baleset független kivizsgálása után, a NASA úgy döntött, hogy visszavonul az űrrepülőgép flottával. 2010-ben támogatták a Constellation programot és az emberes űrrepülésre tervezett Orion űrhajót, azonban Obama elnök 2010. október 11-én aláírta a NASA törvény engedélyezését, amely hivatalosan is Constellation program végét jelentette.
+                </div>
+
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
