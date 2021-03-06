@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-  <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <ul class="navbar-nav">
         <li class="navbar-brand">
@@ -43,9 +41,9 @@
       </ul>
     </nav>
     <style>
-      div {
+      body {
         background-image: url('pexels-pixabay-207529.jpg');
-        background-repeat: no-repeat;
+        background-repeat: round;
         background-attachment: fixed;
         width: 100%;
         height: 100%;
@@ -56,15 +54,15 @@
       <form action="/action_page.php">
         <div>
           <label for="Név" style="color: white;">Név:</label>
-          <input type="text" class="form-control" placeholder="Ide írj a nevét" name="Név">
+          <input type="text" class="form-control" placeholder="Ide írj a nevét!" name="Név">
         </div>
         <div>
           <label for="Név" style="color: white;">Email:</label>
-          <input type="text" class="form-control" placeholder="Ide irja az emailcémét" name="Név" required>
+          <input type="text" class="form-control" placeholder="Ide irja az emailcímét!" name="Név" required>
         </div>
         <div>
           <label style="color: white;">Kérdés:</label>
-          <input type="text" class="form-control" id="kérdés" placeholder="Ide írja a kérdést" name="kérdés">
+          <textarea name="kérdés" id="kérdés" cols="30" rows="10" class="form-control" placeholder="Ide írja a kérdést!"></textarea>
         </div>
         <div style="margin-top: 10px;">
           <button type="submit" class="btn btn-primary">Submit</button>
