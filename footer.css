@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: lightgray;
+  margin-top: 10px;
+}
+.footer .col {
+  width: 400px;
+  float: left;
+  box-sizing: border-box;
+  padding: auto;
+}
