@@ -4,6 +4,8 @@
   position: relative;
   color: lightgray;
   margin-top: 10px;
+  position: fixed;
+  bottom: 0px;
 }
 .footer .col {
   width: 400px;
