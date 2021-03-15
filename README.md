@@ -6,3 +6,6 @@ A NASA (angolul, hivatalosan: National Aeronautics and Space Administration, mag
 - Bóka Mátyás(projektvezető)
 - Bányai Bence
 - Matesz Ádám
+
+**Github Pages link:**
+https://github.com/bokamatyas/RajongoiOldal9A_C.git
