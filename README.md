@@ -8,4 +8,8 @@ A NASA (angolul, hivatalosan: National Aeronautics and Space Administration, mag
 - Matesz Ádám
 
 **Github Pages link:**
+bokamatyas/issue51
 ## https://github.com/bokamatyas/RajongoiOldal9A_C.git
+=======
+https://bokamatyas.github.io/RajongoiOldal9A_C/
+master
